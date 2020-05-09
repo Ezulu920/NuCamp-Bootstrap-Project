@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap Css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!-- Font Awesome  -->
+  <script src="https://kit.fontawesome.com/0181316d6b.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- Customer CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <title>AYO MUSIC 🎵</title>
+</head>
+
+<body>
+
+  <header>
+
+    <!-- Navbar -->
+
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+        <a class="navbar-brand" href="index.html">AYO MUSIC <i class="far fa-play-circle"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><i class="fas fa-home"></i> HOME</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#pricing">PRICING <i class="fas fa-dollar-sign"></i></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#cta">DOWNLOAD <i class="fas fa-cloud-download-alt"></i></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#footer">CONTACT <i class="fas fa-address-book"></i></a>
+            </li>
+          </ul>
+          <ul class=" navbar-nav mr-7 mt-2">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">LOGIN</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#" data-target="#signupModal" data-toggle="modal">SIGN UP</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Navbar Ends -->
+
+  <!-- Login Modal Start   -->
+
+  <div id="loginModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Login </h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12">
+                  <label class="sr-only" for="loginEmail">Email address</label>
+                  <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                </div>
+                <div class="form-group col-12">
+                  <label class="sr-only" for="loginPassword">Password</label>
+                  <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                </div>
+                <div class="col">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label"> Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal Ends -->
+
+  <!-- Sign Up Modal Starts -->
+  <div id="signupModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Sign Up</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12">
+                  <label class="sr-only" for="loginEmail">Email address</label>
+                  <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                </div>
+                <div class="form-group col-12">
+                  <label class="sr-only" for="loginPassword">Password</label>
+                  <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                </div>
+                <div class="form-group col-12">
+                  <label class="sr-only" for="loginPassword">Confirm Password</label>
+                  <input type="password" class="form-control form-control-sm" id="loginPassword"
+                    placeholder="Confirm Password">
+                </div>
+                <div class="col">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label"> Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign Up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sign Up Modal Ends -->
+
+  <!-- Title -->
+
+  <div class="row div1">
+
+    <div class="col-lg-8">
+      <h1 class="big-heading">Awesome Music 🎵 For All</h1>
+      <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+      <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i>
+        Download</button>
+    </div>
+
+    <div class="col-lg-4">
+      <img class="title-image" src="image/iphone.png" alt="iphone-mockup">
+    </div>
+
+  </div>
+
+  </div>
+
+  <hr>
+
+  <!-- Features -->
+
+  
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="fas fa-cloud-download-alt fa-4x"></i>
+          <h3 class="feature-title">Download music.</h3>
+          <p>Listen Anywhere.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="fas fa-compact-disc fa-4x"></i>
+          <h3 class="feature-title">No ad interruptions.</h3>
+          <p>Enjoy Nonstop Music.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="fas fa-forward fa-4x"></i>
+          <h3 class="feature-title">Unlimited skips.</h3>
+          <p>Just Hit Next.</p>
+        </div>
+      </div>
+    </div>
+
+  <hr>
+  <!-- Pricing -->
+
+  <section class="white-section" id="pricing">
+
+    <h2 class="section-heading">Pick Your Premium Plan</h2>
+    <p>Listen without limits on your phone, speaker, and other devices.</p>
+
+
+    <div class="row">
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+          <div class="card-header">
+            <h3>Individual</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$9.99/mo</h2>
+            <p>1 account</p>
+            <p>Listen to music ad-free</p>
+            <p>Play anywhere - even offline</p>
+            <p>On-demand playback</p>
+            <button class="btn btn-lg btn-block btn-outline-danger" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+          <div class="card-header">
+            <h3>Student</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$5.99/mo</h2>
+            <p>1 Account</p>
+            <p>Listen to music ad-free</p>
+            <p>Play anywhere - even offline</p>
+            <p>On-demand playback</p>
+            <button class="btn btn-lg btn-block btn-outline-danger" type="button">Sign Up</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pricing-column col-lg-4">
+        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+          <div class="card-header">
+            <h3>Family</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$14.99/mo</h2>
+            <p>Up to 6 accounts</p>
+            <p>6 Premium accounts for family members</p>
+            <p>Ad-free music listening</p>
+            <p>play offline, on-demand playback</p>
+            <button class="btn btn-lg btn-block btn-outline-danger" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <div class="container-fluid">
+      
+      <h3>Download Our Amazing, Eazy To Use App From The Appstore or Google Playstore. Don't worry, It's free to Download</h3>
+      <h2 class="big-heading">Download Here</h2>
+      <button class="download-button btn btn-lg btn-dark" type="button"><i class="fab fa-apple"></i> Download</button>
+      <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i>
+        Download</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="footer-section" id="footer">
+    <div class="container-fluid">
+      <a href="#"><i class="social-icon fab fa-facebook-f fa-3x"></i></a>
+      <a href="#"><i class="social-icon fab fa-twitter fa-3x"></i></a>
+      <a href="#"><i class="social-icon fab fa-instagram fa-3x"></i></a>
+      <a href="#"><i class="social-icon fas fa-envelope fa-3x"></i></a>
+      <p>© Copyright 2020 AYO MUSIC <i class="far fa-play-circle"></i></p>
+    </div>
+  </footer>
+
+  <button onclick="topFunction()" id="scrollTop" title="Go to top">Top</button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+    
+    <script>
+      var mybutton = document.getElementById("scrollTop");
+      window.onscroll = function () { scrollFunction() };
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+</body>
+
+</html>
